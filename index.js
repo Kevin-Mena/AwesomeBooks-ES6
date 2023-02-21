@@ -1,6 +1,6 @@
-import UI from './User.js';
-import Storage from './storage.js';
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+import UI from './modules/User.js';
+import Storage from './modules/storage.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 // Book class
 class Book {
   constructor(title, author, index) {
