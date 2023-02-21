@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>BookApp</title>
+</head>
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar">
+            <h1>Awesome Books</h1>
+            <ul class="nav-list">
+                <li class="nav-link1">List</a></li>
+                <li class="nav-link2">Add Book</a></li>
+                <li class="nav-link3">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="time"></div>
+
+    <!-- Book list section -->
+    <section class="booklist" id="list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Remove book</th>
+                </tr>
+                <h3>All awesome books</h3>
+            </thead>
+            <tbody class="bookstore"></tbody>
+        </table>
+    </section>
+
+    <!-- Add a new book -->
+    <section class="addbook" id="newbook">
+        <h4>Add a new book</h4>
+        <form id="addbook-form">
+            <div class="div-form">
+                 <div id="error">Please fill in all fields!</div>
+            <label for="title">
+                <input type="text" class="title" name="title" placeholder="Book">
+            </label>
+            <label for="author">
+                <input type="text" class="author" name="author" placeholder="Author">
+            </label>
+            <div class="btn-add">
+                <button type="submit" id="addbook">Add book</button>
+            </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h4>Contact Information</h4>
+        <div class="contents">
+            <p>Do you have some questions or just want to same &#34;Hello&#34;?<br>You can reach out to us!
+        </p>
+        <ul class="cont-info">
+            <li>Our email mail@mail.com</li>
+            <li>Our phone number +864894747</li>
+            <li>Our address: Streethome,89,City,Country</li>
+            
+        </ul>
+        </div>
+    </section>
+    <div class="footer">
+        <h5>Copyright&#8230;</h5>
+    </div>
+
+    <!-- javascript -->
+    <script type="module" src="./modules/index.js"></script>
+</body>
+</html>
