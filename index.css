@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;500&display=swap');
+
+/* GLOBAL STYLES */
+:root {
+  --ff-primary: 'Lato', sans-serif;
+  --ff-secondary: 'Poppins', sans-serif;
+  --primary-color-1: hsl(205, 63%, 5%);
+  --primary-color-2: hsl(205, 74%, 60%);
+  --primary-color-3: rgb(226, 226, 192);
+  --primary-color-4: #fff;
+  --def-transition: all 0.5s linear;
+  --line-spacing: 0.25rem;
+  --border-radius: 0.5rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* nav styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color-2);
+  align-items: center;
+  padding: 0.7rem;
+  font-family: var(--ff-primary);
+  color: var(--primary-color-1);
+  height: 5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.nav-link1,
+.nav-link2,
+.nav-link3 {
+  border-right: 1px solid var(--primary-color-1);
+  padding-right: 1rem;
+  height: 40px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary-color-1);
+  font-family: var(--ff-primary);
+}
+
+.time {
+  display: flex;
+  background-color: var(--primary-color-3);
+  height: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  font-family: var(--ff-secondary);
+}
+
+h4,
+h3 {
+  font-family: var(--ff-primary);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+table {
+  font-family: var(--ff-primary);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid var(--primary-color-4);
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--primary-color-3);
+}
+
+tr:hover {
+  background-color: var(--primary-color-4);
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--primary-color-2);
+  color: var(--primary-color-4);
+}
+
+tbody {
+  text-align: center;
+  font-family: var(--ff-secondary);
+}
+
+tbody:hover {
+  cursor: pointer;
+}
+
+#addbook-form {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  place-items: center;
+}
+
+.div-form {
+  background: none;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.btn-add {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#addbook {
+  background-color: rgba(26, 23, 23);
+  color: var(--primary-color-4);
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-family: var(--ff-primary);
+}
+
+#addbook:hover {
+  color: var(--primary-color-1);
+  background-color: var(--primary-color-4);
+  transition: var(--def-transition);
+  font-weight: 800;
+}
+
+.removebook {
+  background-color: rgb(191, 10, 10);
+  color: var(--primary-color-4);
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-family: var(--ff-primary);
+  border: none;
+}
+
+.removebook:hover {
+  color: var(--primary-color-1);
+  background-color: var(--primary-color-4);
+  transition: var(--def-transition);
+  font-weight: 800;
+  border: 1px solid var(--primary-color-1);
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-family: var(--ff-primary);
+  font-size: 1.2rem;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  border: 1px solid var(--primary-color-1);
+  padding: 2px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--ff-primary);
+  background-color: var(--primary-color-3);
+}
+
+#error {
+  color: rgb(207, 11, 11);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  display: none;
+}
