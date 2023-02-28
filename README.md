@@ -1,4 +1,5 @@
 # AwesomeBooks-ES6
+is a simple book app for keeping track of books added and removed in a booklist.
 <a name="readme-top"></a>
 
 <!--
